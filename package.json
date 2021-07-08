@@ -1,0 +1,23 @@
+{
+  "name": "append-json-files",
+  "version": "1.0.0",
+  "description": "append-json-files",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "eslint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serejajar/append-json-files.git"
+  },
+  "author": "Sergey Jar",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/serejajar/append-json-files/issues"
+  },
+  "homepage": "https://github.com/serejajar/append-json-files#readme",
+  "devDependencies": {
+    "eslint": "^7.29.0"
+  }
+}
