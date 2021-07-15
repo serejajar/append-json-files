@@ -1,0 +1,21 @@
+{
+  "id": "chisinau-botanica-MirceaCelBatran",
+  "search": "mircea cel batran",
+  "address": {
+    "district": "chisinau",
+    "city": "botanica"
+  },
+  "name": {
+    "ro": "liceul teoretic \"mircea cel batran\"",
+    "ru": ""
+  },
+  "bac": [
+    {
+      "year": "2019",
+      "text": "277   CHISINAU       BOTANICA   Liceul Teoretic \"Mircea cel Bătrân\"                          29    22    7   75.86   5.95",
+      "candidats": 29,
+      "rejectedCandidats": 7,
+      "mediumNote": 5.95
+    }
+  ]
+}
