@@ -19,5 +19,8 @@
   "homepage": "https://github.com/serejajar/append-json-files#readme",
   "devDependencies": {
     "eslint": "^7.29.0"
+  },
+  "dependencies": {
+    "pdf-to-text": "^0.0.7"
   }
 }
