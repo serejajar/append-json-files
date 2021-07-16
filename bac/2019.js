@@ -1,9 +1,4 @@
-const bac2019 = `Anexa nr. 4a
-Date cu privire la numărul de candidaţi care au participat în sesiunea de bază a examenului de bacalaureat (4-21 iunie 2019) în funcţie de
-limba de instruire, profil şi media examenului de bacalaureat, pentru fiecare liceu teoretic.
-                   Raion                                                                       Limba de                    Nr. de                Din aceştia cu media examenului de BAC:              Cu note
-Nr. crt.                                            Unitatea de proveniență                                  Profilul
-                 Localitate                                                                    instruire                  candidați       10        9-9.99    8-8.99 7-7.99    6-6.99 5-5.99        insuficiente
+const bac2019 = `
            ANENII NOI
    1                            Instituție Publică Liceul Teoretic "ALEXANDR PUŞKIN"          Rusă         Real                  7         0          0        0       1        6       0                0
            ANENII NOI
@@ -37,15 +32,15 @@ Nr. crt.                                            Unitatea de proveniență   
            ANENII NOI
   11                            Instituție Publică Liceul Teoretic Varnița                    Română       Umanist           21            0          2        6       4        6       3                0
            VARNIȚA
-           BASARABEASCA         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "CONSTANTIN
-  12                                                                           Română                      Umanist           30            0          0        4       9       10       7                0
-           ABACLIA              STERE"
-           BASARABEASCA         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDR
-  13                                                                           Rusă                        Umanist           16            0          0        0       2       10       4                8
-           BASARABEASCA         PUŞKIN"
-           BASARABEASCA         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN CEL
-  14                                                                           Română                      Umanist               0         0          0        0       0        0       0                1
-           CARABETOVCA          MARE"
+           BASARABEASCA
+  12                            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "CONSTANTIN STERE"         Română       Umanist       30            0          0        4       9       10       7                0
+           ABACLIA
+           BASARABEASCA
+  13                            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDR PUŞKIN"          Rusă         Umanist           16            0          0        0       2       10       4                8
+           BASARABEASCA
+           BASARABEASCA
+  14                            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN CEL MARE"          Română       Umanist               0         0          0        0       0        0       0                1
+           CARABETOVCA
            BENDER
   15                            Liceul Teoretic "Alexandru cel Bun" Bender                    Română       Real                  8         0          2        4       2        0       0                0
            BENDER
@@ -83,21 +78,20 @@ Nr. crt.                                            Unitatea de proveniență   
   26                            Liceul Teoretic Tabani                                        Română       Umanist               9         0          1        1       4        1       2                5
            TABANI
            BRICENI
-  27                            Liceul Teoretic Tețcani                                       Ucraineană Umanist             10            0          0        2       6        1       1                2
+  27                            Liceul Teoretic Tețcani                                       Ucraineană    Umanist             10            0          0        2       6        1       1                2
            TEȚCANI
            BRICENI
   28                            Liceul Teoretic Trebisăuți                                    Română       Real                  1         0          0        0       0        1       0                1
            TREBISĂUȚI
-
            BRICENI
   29                           Liceul Teoretic Trebisăuți                                    Română      Umanist         6        0         0        1       3        2       0           7
            TREBISĂUȚI
-           BĂLȚI               INSTITUȚIA PUBLICĂ LICEUL TEORETIC
-  30                                                                                         Română      Real            62       1        14       24       17       5       1           0
-           BĂLȚI               "M.EMINESCU"
-           BĂLȚI               INSTITUȚIA PUBLICĂ LICEUL TEORETIC
-  31                                                                                         Română      Umanist         27       0         3        6       4       11       3           0
-           BĂLȚI               "M.EMINESCU"
+           BĂLȚI
+  30                           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "M.EMINESCU"               Română      Real            62       1        14       24       17       5       1           0
+           BĂLȚI
+           BĂLȚI
+  31                           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "M.EMINESCU"               Română      Umanist         27       0         3        6       4       11       3           0
+           BĂLȚI
            BĂLȚI
   32                           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "N.GOGOL"                  Rusă        Real            17       0         0        4       8        3       2           0
            BĂLȚI
@@ -168,8 +162,8 @@ Nr. crt.                                            Unitatea de proveniență   
   54                           Liceul Teoretic Republican "Ion Creangă"                      Română      Umanist         72       0         4       16       27      21       4           3
            BĂLȚI
            CAHUL
-  55       ALEXANDRU IOAN      Instituția Publică Liceul Teoretic "A.Mateevici"              Română      Umanist         16       0         0        1       6        6       3           2
-           CUZA
+  55                           Instituția Publică Liceul Teoretic "A.Mateevici"              Română      Umanist         16       0         0        1       6        6       3           2
+           ALEXANDRU IOAN CUZA
            CAHUL
   56                           Instituția Publică Liceul Teoretic "Academician Ion Bostan"   Română      Umanist         23       0         0        3       8        5       7           4
            BRÎNZA
@@ -233,99 +227,93 @@ Nr. crt.                                            Unitatea de proveniență   
            CANTEMIR
   76                           Instituția publică Liceul Teoretic "Nicolae Mihai"            Rusă        Umanist         8        0         0        2       1        3       2           1
            CIOBALACCIA
-           CHIŞINĂU            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "DIMITRIE
-  77                                                                                         Rusă        Real            21       0         2        8       10       1       0           0
-           BOTANICA CHIŞINĂU   CANTEMIR"
-           CHIŞINĂU            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "DIMITRIE
-  78                                                                                         Rusă        Umanist         23       0         1        5       11       4       2           1
-           BOTANICA CHIŞINĂU   CANTEMIR"
+           CHIŞINĂU
+  77                           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "DIMITRIE CANTEMIR"                                                             Rusă        Real            21       0         2        8       10       1       0           0
+           BOTANICA
+           CHIŞINĂU
+  78                           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "DIMITRIE CANTEMIR"                                                              Rusă        Umanist         23       0         1        5       11       4       2           1
+           BOTANICA
            CHIŞINĂU
   79                           Instituția Publică Liceul Teoretic "Liviu Rebreanu"           Română      Real            16       0         1        5       6        2       2           5
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   80                           Instituția Publică Liceul Teoretic "Liviu Rebreanu"           Română      Umanist         23       0         1        5       9        4       4           1
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   81                           Instituția Publică Liceul Teoretic "Nicolae Iorga"            Română      Real            54       0         3       16       18      12       5           2
-           BOTANICA CHIŞINĂU
-
-                                                                                                                                                                                                    114
-
-                   Raion                                                                         Limba de                  Nr. de          Din aceştia cu media examenului de BAC:         Cu note
-Nr. crt.                                           Unitatea de proveniență                                     Profilul
-                 Localitate                                                                      instruire                candidați   10      9-9.99    8-8.99 7-7.99    6-6.99 5-5.99   insuficiente
+           BOTANICA
            CHIŞINĂU
   82                           Instituția Publică Liceul Teoretic "Nicolae Iorga"                Română      Umanist         26       0         2       10       6        6       2           2
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   83                           Instituția Publică Liceul Teoretic "Petru Movilă"                 Rusă        Real            37       0         2        6       18      10       1           2
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   84                           Instituția Publică Liceul Teoretic "Petru Movilă"                 Rusă        Umanist         25       0         0        3       10       9       3           1
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   85                           Instituția Publică Liceul Teoretic "Traian"                       Română      Real            8        0         0        1       5        2       0           6
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   86                           Instituția Publică Liceul Teoretic "Traian"                       Română      Umanist         24       0         0        3       4       11       6           2
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   87                           Instituția Publică Liceul Teoretic "Tudor Vladimirescu"           Română      Real            15       0         0        3       7        3       2          11
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   88                           Instituția Publică Liceul Teoretic "Tudor Vladimirescu"           Română      Umanist         21       0         1        2       8        7       3           4
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   89                           LICEUL TEORETIC "BOGDAN PETRICEICU HAŞDEU"                        Rusă        Real            16       0         0        3       6        7       0           2
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   90                           LICEUL TEORETIC "BOGDAN PETRICEICU HAŞDEU"                        Rusă        Umanist         19       0         0        0       5        8       6           3
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   91                           LICEUL TEORETIC "IULIA HAŞDEU"                                    Română      Real            19       0         6        4       7        2       0           0
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   92                           LICEUL TEORETIC "IULIA HAŞDEU"                                    Română      Umanist         25       0         4        5       10       6       0           0
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   93                           LICEUL TEORETIC "V.ALECSANDRI"                                    Română      Real            14       0         0        1       3        8       2           8
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   94                           LICEUL TEORETIC "V.ALECSANDRI"                                    Română      Umanist         42       0         2        4       14      12       10          6
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   95                           Liceul Teatral Orăşenesc                                          Rusă        Artă            16       0         0        3       7        5       1           5
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   96                           Liceul Teoretic "Mihai Eminescu"                                  Română      Real            40       0        12       12       12       4       0           1
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   97                           Liceul Teoretic "Mihai Eminescu"                                  Română      Umanist         26       1         8        5       9        3       0           0
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   98                           Liceul Teoretic "Mihai Grecu"                                     Rusă        Umanist         38       0         0        4       12      17       5           0
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   99                           Liceul Teoretic "Mircea cel Bătrân"                               Română      Umanist         16       0         0        0       4        7       5          14
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   100                          Liceul Teoretic "Pro Succes"                                      Română      Umanist         10       0         3        3       2        1       1           2
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   101                          Liceul Teoretic cu profil de arte "Elena Alistar"                 Română      Artă            24       0         7        4       8        5       0           1
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   102                          Liceul Teoretic cu profil de arte "Elena Alistar"                 Română      Real            22       0         2        7       9        3       1           2
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   103                          Liceul Teoretic cu profil de arte "Elena Alistar"                 Română      Umanist         27       0         2        3       10       8       4           4
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   104                          Liceul Teoretic cu profil sportiv "Gloria"                        Rusă        Sport           11       0         0        0       6        3       2           8
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   105                          Liceul Teoretic cu profil sportiv "Gloria"                        Rusă        Umanist         6        0         0        0       0        3       3           2
-           BOTANICA CHIŞINĂU
+           BOTANICA
            CHIŞINĂU
   106                          Instituția Publică Liceul Teoretic "Toader Bubuiog"               Română      Umanist         18       0         1        3       4        6       4           5
            BUBUIECI
@@ -334,110 +322,103 @@ Nr. crt.                                           Unitatea de proveniență    
            BUDEŞTI
            CHIŞINĂU
   108                          Instituția Privată Liceul "Columna"                               Română      Real            7        0         0        5       0        2       0           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   109                          Instituția Publică Liceul Teoretic "Alexandr Puşkin"              Rusă        Real            25       0         0        6       11       7       1           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   110                          Instituția Publică Liceul Teoretic "Alexandr Puşkin"              Rusă        Umanist         28       0         0        5       13      10       0           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   111                          Instituția Publică Liceul Teoretic "Liviu Deleanu"                Română      Real            27       0         0        9       12       5       1           3
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   112                          Instituția Publică Liceul Teoretic "Liviu Deleanu"                Română      Umanist         37       0         2        8       16      10       1           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   113                          Instituția Publică Liceul Teoretic "Mircea Eliade"                Română      Real            23       2        13        7       1        0       0           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   114                          Instituția Publică Liceul Teoretic "Mircea Eliade"                Română      Umanist         23       0         6       11       6        0       0           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   115                          Instituția Publică Liceul Teoretic "Onisifor Ghibu"               Română      Real            31       0         2       11       10       6       2           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   116                          Instituția Publică Liceul Teoretic "Onisifor Ghibu"               Română      Umanist         29       0         2        6       8        9       4           2
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   117                          Instituția Publică Liceul Teoretic "Petru Rareş"                  Română      Umanist         48       0         1        4       18      17       8           9
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   118                          Instituția Publică Liceul Teoretic "Principesa Natalia Dadiani"   Română      Real            27       0         4       12       9        2       0           2
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   119                          Instituția Publică Liceul Teoretic "Principesa Natalia Dadiani"   Română      Umanist         48       0         2        9       9       18       10          5
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   120                          Instituția Publică Liceul Teoretic "Spiru Haret"                  Română      Real            36       0        14       17       3        2       0           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   121                          Instituția Publică Liceul Teoretic "Spiru Haret"                  Română      Umanist         34       2        11       20       0        1       0           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   122                          Instituția Publică Liceul Teoretic "Vasile Vasilache"             Română      Real            15       0         0        4       5        6       0           4
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   123                          Instituția Publică Liceul Teoretic "Vasile Vasilache"             Română      Umanist         25       0         0        5       9        9       2           2
-           BUIUCANI CHIŞINĂU
-           CHIŞINĂU            Instituția Publică Liceul Teoretic cu Profil de Arte "Ion şi Doina
-  124                                                                                             Română     Umanist         39       0         1        4       12      12       10          8
-           BUIUCANI CHIŞINĂU   Aldea-Teodorovici"
+           BUIUCANI
+           CHIŞINĂU
+  124                          Instituția Publică Liceul Teoretic cu Profil de Arte "Ion şi Doina Aldea-Teodorovici"        Română     Umanist         39       0         1        4       12      12       10          8
+           BUIUCANI
            CHIŞINĂU
   125                          Instituția de Învățământ Liceul Teoretic "Elimul Nou"             Română      Real            17       0         5        5       7        0       0           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   126                          Instituția de Învățământ Liceul Teoretic "Elimul Nou"             Română      Umanist         17       0         3        5       5        4       0           0
-           BUIUCANI CHIŞINĂU
-           CHIŞINĂU            LICEUL DE CREATIVITATE ŞI INVENTICĂ "PROMETEU-
-  127                                                                         Română                         Real            31       1        15       13       2        0       0           0
-           BUIUCANI CHIŞINĂU   PRIM"
-           CHIŞINĂU            LICEUL DE CREATIVITATE ŞI INVENTICĂ "PROMETEU-
-  128                                                                         Română                         Umanist         29       0         9       12       5        3       0           0
-           BUIUCANI CHIŞINĂU   PRIM"
+           BUIUCANI
+           CHIŞINĂU
+  127                          LICEUL DE CREATIVITATE ŞI INVENTICĂ "PROMETEU-PRIM"               Română       Real            31       1        15       13       2        0       0           0
+           BUIUCANI
+           CHIŞINĂU
+  128                          LICEUL DE CREATIVITATE ŞI INVENTICĂ "PROMETEU-PRIM"               Română       Umanist         29       0         9       12       5        3       0           0
+           BUIUCANI
            CHIŞINĂU
   129                          Liceul "Evrica"                                                   Rusă        Umanist         8        0         0        3       3        1       1           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   130                          Liceul - Internat Municipal cu Profil Sportiv                     Română      Sport           39       0         0        2       9       22       6           8
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   131                          Liceul Teoretic "Antioh Cantemir"                                 Rusă        Real            20       0         1        6       9        3       1           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   132                          Liceul Teoretic "Antioh Cantemir"                                 Rusă        Umanist         14       0         0        0       5        7       2           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   133                          Liceul Teoretic "Anton Cehov"                                     Rusă        Umanist         37       0         0        0       13      18       6          10
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   134                          Liceul Teoretic "Dante Alighieri"                                 Română      Real            13       0         1        2       9        1       0           1
-           BUIUCANI CHIŞINĂU
-
-
-                                                                                                                                                                                                        115
-
-                   Raion                                                                        Limba de                  Nr. de          Din aceştia cu media examenului de BAC:         Cu note
-Nr. crt.                                           Unitatea de proveniență                                    Profilul
-                  Localitate                                                                    instruire                candidați   10      9-9.99    8-8.99 7-7.99    6-6.99 5-5.99   insuficiente
+           BUIUCANI
            CHIŞINĂU
   135                          Liceul Teoretic "Dante Alighieri"                               Română       Umanist         19       2         3        4       7        2       1           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   136                          Liceul Teoretic "I.S.Neciui-Levițchi"                           Rusă         Umanist         0        0         0        0       0        0       0           3
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   137                          Liceul Teoretic "N.V.Gogol"                                     Rusă         Real            58       0         3       19       22      11       3           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   138                          Liceul Teoretic "N.V.Gogol"                                     Rusă         Umanist         52       0         0       13       19      20       0           0
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   139                          Liceul Teoretic European                                        Română       Real            3        0         0        1       0        1       1           1
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   140                          Liceul Teoretic European                                        Română       Umanist         23       0         1        3       8        2       9           8
-           BUIUCANI CHIŞINĂU
+           BUIUCANI
            CHIŞINĂU
   141                          Instituția Publică Liceul Teoretic "Grigore Vieru"              Română       Real            12       0         0        0       4        5       3           2
            BĂCIOI
@@ -446,61 +427,61 @@ Nr. crt.                                           Unitatea de proveniență    
            BĂCIOI
            CHIŞINĂU
   143                          Instituția Publică Liceul Teoretic "Gheorghe Asachi"            Română       Real            73       1        17       22       19      11       3           6
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   144                          Instituția Publică Liceul Teoretic "Gheorghe Asachi"            Română       Umanist         26       0         3        7       8        6       2           0
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   145                          Instituția Publică Liceul Teoretic "Mihai Viteazul"             Română       Real            48       0        10       20       12       6       0           3
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   146                          Instituția Publică Liceul Teoretic "Mihai Viteazul"             Română       Umanist         26       0         0        8       10       4       4           2
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   147                          Instituția Publică Liceul Teoretic "Minerva"                    Română       Real            19       0         2        4       10       3       0           7
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   148                          Instituția Publică Liceul Teoretic "Minerva"                    Română       Umanist         29       0         2        5       7        8       7           1
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   149                          Instituția Publică Liceul Teoretic "Universul"                  Română       Real            7        0         0        0       1        4       2          10
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   150                          Instituția Publică Liceul Teoretic "Universul"                  Română       Umanist         27       0         0        0       2       14       11          8
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   151                          Instituția de Învățămînt Liceul "Litterarum"                    Română       Real            16       0         1        5       7        2       1           1
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   152                          Instituția de Învățămînt Liceul "Litterarum"                    Română       Umanist         9        0         2        2       2        2       1           1
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   153                          Liceul "Mihail Koțiubinski"                                     Rusă         Umanist         20       0         0        9       7        2       2           3
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   154                          Liceul Teoretic "Academician C.Sibirschi"                       Rusă         Real            20       0         0        7       6        7       0           4
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   155                          Liceul Teoretic "Academician C.Sibirschi"                       Rusă         Umanist         17       0         0        0       5        7       5           1
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   156                          Liceul Teoretic "Titu Maiorescu"                                Rusă         Umanist         18       0         1        3       5        5       4           1
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   157                          Liceul Teoretic "Vasile Lupu"                                   Rusă         Real            16       0         1        2       10       3       0           2
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   158                          Liceul Teoretic "Vasile Lupu"                                   Rusă         Umanist         17       0         0        2       3       10       2           3
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   159                          Liceul Teoretic cu profil de arte "Nicolae Sulac"               Română       Artă            9        0         1        2       6        0       0           0
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
   160                          Liceul Teoretic cu profil de arte "Nicolae Sulac"               Română       Umanist         20       0         1        5       4        8       2           1
-           CENTRU CHIŞINĂU
+           CENTRU
            CHIŞINĂU
-  161                          Liceul teoretic cu profil tehnologic pentru copii cu vederea slabă Română    Real            4        0         0        0       3        0       1           2
-           CENTRU CHIŞINĂU
+  161                          Liceul teoretic cu profil tehnologic pentru copii cu vederea slabă    Română    Real            4        0         0        0       3        0       1           2
+           CENTRU
            CHIŞINĂU
   162                          Instituția Publică Liceul Teoretic Republican "Aristotel"       Română       Real            63       3        26       33       1        0       0           0
            CHIŞINĂU
@@ -530,62 +511,55 @@ Nr. crt.                                           Unitatea de proveniență    
            CHIŞINĂU
            CHIŞINĂU
   171                          Instituția Publică Liceul Teoretic "Constantin Negruzzi"        Română       Real            16       0         0        3       6        7       0          10
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   172                          Instituția Publică Liceul Teoretic "Constantin Negruzzi"        Română       Umanist         24       0         0        5       3       11       5           4
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   173                          Instituția Publică Liceul Teoretic "Gaudeamus"                  Română       Real            30       0         2       10       10       7       1           6
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   174                          Instituția Publică Liceul Teoretic "Gaudeamus"                  Română       Umanist         53       0         0        6       23      17       7           4
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   175                          Instituția Publică Liceul Teoretic "Ginta Latină"               Română       Real            16       0         0        2       9        4       1           9
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   176                          Instituția Publică Liceul Teoretic "Ginta Latină"               Română       Umanist         21       0         1        3       5        8       4           3
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   177                          Instituția Publică Liceul Teoretic "OLIMP"                      Rusă         Real            0        0         0        0       0        0       0           1
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   178                          Instituția Publică Liceul Teoretic "OLIMP"                      Rusă         Umanist         50       0         0       13       21      15       1           4
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   179                          Instituția Publică Liceul Teoretic "Petru Zadnipru"             Română       Real            18       0         0        6       6        5       1           7
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   180                          Instituția Publică Liceul Teoretic "Petru Zadnipru"             Română       Umanist         24       0         0        1       6       13       4           7
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   181                          Instituția Publică Liceul Teoretic cu Profil Sportiv nr. 2      Română       Sport           25       0         0        2       6       10       7           5
-           CIOCANA CHIŞINĂU
-           CHIŞINĂU            Instituția Publică Liceul Teoretic cu profil de arte "Mihail
-  182                                                                                          Română       Artă            46       0         1       13       14      17       1           2
-           CIOCANA CHIŞINĂU    Berezovschi"
-           CHIŞINĂU            Instituția Publică Liceul Teoretic cu profil de arte "Mihail
-  183                                                                                          Română       Real            29       0         8       11       8        2       0           0
-           CIOCANA CHIŞINĂU    Berezovschi"
-           CHIŞINĂU            Instituția Publică Liceul Teoretic cu profil de arte "Mihail
-  184                                                                                          Română       Umanist         29       0         1        1       17       9       1           0
-           CIOCANA CHIŞINĂU    Berezovschi"
+           CIOCANA
+           CHIŞINĂU
+  182                          Instituția Publică Liceul Teoretic cu profil de arte "Mihail Berezovschi"       Română       Artă            46       0         1       13       14      17       1           2
+           CIOCANA
+           CHIŞINĂU
+  183                          Instituția Publică Liceul Teoretic cu profil de arte "Mihail Berezovschi"       Română       Real            29       0         8       11       8        2       0           0
+           CIOCANA
+           CHIŞINĂU
+  184                          Instituția Publică Liceul Teoretic cu profil de arte "Mihail Berezovschi"       Română       Umanist         29       0         1        1       17       9       1           0
+           CIOCANA
            CHIŞINĂU
   185                          Liceul Teoretic "Dacia"                                         Rusă         Real            9        0         0        0       3        5       1          13
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   186                          Liceul Teoretic "Dacia"                                         Rusă         Umanist         12       0         0        0       0        7       5           3
-           CIOCANA CHIŞINĂU
+           CIOCANA
            CHIŞINĂU
   187                          Instituția Publică Liceul Teoretic "Nicolae Bălcescu"           Română       Real            11       0         0        5       4        2       0           1
            CIORESCU
-
-
-                                                                                                                                                                                                       116
-
-                   Raion                                                                      Limba de                  Nr. de          Din aceştia cu media examenului de BAC:         Cu note
-Nr. crt.                                          Unitatea de proveniență                                   Profilul
-                 Localitate                                                                   instruire                candidați   10      9-9.99    8-8.99 7-7.99    6-6.99 5-5.99   insuficiente
            CHIŞINĂU
   188                         Instituția Publică Liceul Teoretic "Nicolae Bălcescu"           Română      Umanist         16       0         0        4       7        4       1           3
            CIORESCU
@@ -610,108 +584,108 @@ Nr. crt.                                          Unitatea de proveniență     
            CHIŞINĂU
   195                         Liceul Teoretic "Grătieşti"                                     Română      Umanist         6        0         0        0       2        1       3           3
            GRĂTIEŞTI
-           CHIŞINĂU           Instituția Publică Liceul Tehnologic Resurse Educaționale şi
-  196                                                                                         Rusă        Real            15       0         1        4       3        7       0           3
-           RÎŞCANI CHIŞINĂU   Trayning Tehnologic (OPT) "Beniamin Zeev Herțli"
-           CHIŞINĂU           Instituția Publică Liceul Tehnologic Resurse Educaționale şi
-  197                                                                                         Rusă        Umanist         18       0         0        3       5        6       4           0
-           RÎŞCANI CHIŞINĂU   Trayning Tehnologic (OPT) "Beniamin Zeev Herțli"
+           CHIŞINĂU
+  196                         Instituția Publică Liceul Tehnologic Resurse Educaționale şi Trayning Tehnologic (OPT) "Beniamin Zeev Herțli"       Rusă        Real            15       0         1        4       3        7       0           3
+           RÎŞCANI
+           CHIŞINĂU
+  197                         Instituția Publică Liceul Tehnologic Resurse Educaționale şi Trayning Tehnologic (OPT) "Beniamin Zeev Herțli"        Rusă        Umanist         18       0         0        3       5        6       4           0
+           RÎŞCANI
            CHIŞINĂU
   198                         Instituția Publică Liceul Teoretic "Academia Copiilor"          Română      Umanist         15       0         3        5       5        2       0           1
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   199                         Instituția Publică Liceul Teoretic "Academia Copiilor"          Rusă        Umanist         14       0         0        1       7        4       2           1
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   200                         Instituția Publică Liceul Teoretic "Alexandru Ioan Cuza"        Română      Real            10       1         1        3       3        2       0           4
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   201                         Instituția Publică Liceul Teoretic "Alexandru Ioan Cuza"        Română      Umanist         21       0         1        3       4        7       6           1
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   202                         Instituția Publică Liceul Teoretic "Nicolae Milescu Spătarul"   Rusă        Real            22       0         1        8       11       2       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   203                         Instituția Publică Liceul Teoretic "Nicolae Milescu Spătarul"   Rusă        Umanist         14       0         0        3       5        6       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   204                         Instituția Publică Liceul Teoretic "Ştefan cel Mare"            Română      Real            12       0         2        4       4        2       0           2
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   205                         Instituția Publică Liceul Teoretic "Ştefan cel Mare"            Română      Umanist         17       0         0        1       5        5       6           4
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   206                         LICEUL TEORETIC "ALECU RUSSO"                                   Rusă        Umanist         46       0         0        1       23      17       5           1
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   207                         Liceu Teoretic "Waldorf" (cu grupe de grădiniță)                Română      Umanist         23       0         2        7       9        3       2           1
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   208                         Liceul "Svetoci"                                                Rusă        Umanist         16       0         0        0       3        8       5           7
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   209                         Liceul Teoretic "G.Călinescu"                                   Română      Real            21       0         0        6       9        6       0           5
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   210                         Liceul Teoretic "G.Călinescu"                                   Română      Umanist         39       0         0        5       14      11       9           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   211                         Liceul Teoretic "George Meniuc"                                 Română      Real            12       0         0        1       8        2       1           4
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   212                         Liceul Teoretic "George Meniuc"                                 Română      Umanist         22       0         1        3       6       10       2           2
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   213                         Liceul Teoretic "Ion Creangă"                                   Română      Real            52       0         9       30       10       3       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   214                         Liceul Teoretic "Ion Creangă"                                   Română      Umanist         33       0         3       21       9        0       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   215                         Liceul Teoretic "Kiril şi Metodii"                              Rusă        Real            15       0         0        3       7        4       1           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   216                         Liceul Teoretic "Kiril şi Metodii"                              Rusă        Umanist         6        0         0        0       3        2       1           1
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   217                         Liceul Teoretic "Matei Basarab"                                 Rusă        Umanist         23       0         0        0       9       10       4           3
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   218                         Liceul Teoretic "Miguel de Cervantes Saavedra"                  Română      Real            15       0         4        5       5        1       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   219                         Liceul Teoretic "Miguel de Cervantes Saavedra"                  Română      Umanist         32       1         4       12       8        6       1           1
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   220                         Liceul Teoretic "Mihail Kogălniceanu"                           Română      Real            26       0         5       13       6        2       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   221                         Liceul Teoretic "Mihail Kogălniceanu"                           Română      Umanist         28       0         8       12       3        5       0           2
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   222                         Liceul Teoretic "Mihail Sadoveanu"                              Română      Real            19       0         1        5       1        8       4           3
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   223                         Liceul Teoretic "Mihail Sadoveanu"                              Română      Umanist         29       0         0        3       10       5       11          0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   224                         Liceul Teoretic "Natalia Gheorghiu"                             Rusă        Real            12       0         0        4       7        1       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   225                         Liceul Teoretic "Natalia Gheorghiu"                             Rusă        Umanist         31       0         0        5       10      12       4           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   226                         Liceul Teoretic bulgar "Vasil Levski"                           Rusă        Real            6        0         0        0       5        1       0           0
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   227                         Liceul Teoretic bulgar "Vasil Levski"                           Rusă        Umanist         11       0         1        0       0        5       5           2
-           RÎŞCANI CHIŞINĂU
+           RÎŞCANI
            CHIŞINĂU
   228                         Liceul de Limbi Moderne şi Management                           Română      Umanist         7        0         2        4       1        0       0           0
-           RÎŞCANI CHIŞINĂU
-           CHIŞINĂU           Liceul de Limbi Moderne şi Tehnologii Informaționale
-  229                                                                                         Română      Umanist         16       0         1        4       5        5       1           0
-           RÎŞCANI CHIŞINĂU   "SOCRATE"
+           RÎŞCANI
+           CHIŞINĂU
+  229                         Liceul de Limbi Moderne şi Tehnologii Informaționale "SOCRATE"      Română      Umanist         16       0         1        4       5        5       1           0
+           RÎŞCANI
            CHIŞINĂU
   230                         Liceul Teoretic "Dragoş Vodă"                                   Română      Umanist         23       0         3        2       5        9       4           2
            STĂUCENI
@@ -745,13 +719,6 @@ Nr. crt.                                          Unitatea de proveniență     
            CRIULENI
   240                         Liceul Teoretic "Boris Dînga"                                   Română      Real            32       0         1        8       8       14       1           0
            CRIULENI
-
-
-                                                                                                                                                                                                     117
-
-                    Raion                                                                      Limba de                  Nr. de          Din aceştia cu media examenului de BAC:         Cu note
-Nr. crt.                                           Unitatea de proveniență                                   Profilul
-                  Localitate                                                                   instruire                candidați   10      9-9.99    8-8.99 7-7.99    6-6.99 5-5.99   insuficiente
            CRIULENI
   241                          Liceul Teoretic "Boris Dînga"                                   Română      Umanist         21       0         2        5       10       3       1           0
            CRIULENI
@@ -803,21 +770,21 @@ Nr. crt.                                           Unitatea de proveniență    
            CĂLĂRAŞI
   257                          Instituția Publică Liceul Teoretic Țibirica                     Română      Umanist         11       0         0        4       1        3       3           2
            ȚIBIRICA
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GRIGORE
-  258                                                                                          Română      Umanist         14       0         0        1       2        3       8           5
-           CÎRNĂȚENI           GRIGORIU"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXEI
-  259                                                                                          Română      Real            6        0         0        1       3        2       0           1
-           CĂINARI             MATEEVICI"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXEI
-  260                                                                                          Română      Umanist         15       0         0        0       6        7       2          13
-           CĂINARI             MATEEVICI"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  261                                                                                          Română      Real            9        0         0        2       5        2       0           0
-           CĂUŞENI             EMINESCU"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  262                                                                                          Română      Umanist         23       0         0        3       10      10       0           0
-           CĂUŞENI             EMINESCU"
+           CĂUŞENI
+  258                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GRIGORE GRIGORIU"           Română      Umanist         14       0         0        1       2        3       8           5
+           CÎRNĂȚENI
+           CĂUŞENI
+  259                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXEI MATEEVICI"           Română      Real            6        0         0        1       3        2       0           1
+           CĂINARI
+           CĂUŞENI
+  260                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXEI MATEEVICI"           Română      Umanist         15       0         0        0       6        7       2          13
+           CĂINARI
+           CĂUŞENI
+  261                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"             Română      Real            9        0         0        2       5        2       0           0
+           CĂUŞENI
+           CĂUŞENI
+  262                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"             Română      Umanist         23       0         0        3       10      10       0           0
+           CĂUŞENI
            CĂUŞENI
   263                          LICEUL TEORETIC "A.MATEEVICI"                                   Română      Real            25       0         2        7       9        5       2           0
            CĂUŞENI
@@ -830,21 +797,21 @@ Nr. crt.                                           Unitatea de proveniență    
            CĂUŞENI
   266                          LICEUL TEORETIC "ION CREANGĂ"                                   Română      Umanist         23       0         0        1       2       12       8           6
            CĂUŞENI
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL
-  267                                                                                          Română      Umanist         14       0         0        1       3        5       5           6
-           FÎRLĂDENI           SADOVEANU"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MEŞTERUL
-  268                                                                                          Română      Umanist         14       0         1        6       4        2       1           0
-           SĂLCUȚA             MANOLE"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN CEL
-  269                                                                                          Română      Real            3        0         0        0       1        1       1           4
-           TARACLIA            MARE ŞI SFÂNT"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN CEL
-  270                                                                                          Română      Umanist         13       0         0        2       2        4       5           1
-           TARACLIA            MARE ŞI SFÂNT"
-           CĂUŞENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXEI
-  271                                                                                          Română      Umanist         11       0         0        3       0        3       5           1
-           ZAIM                MATEEVICI"
+           CĂUŞENI
+  267                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL SADOVEANU"           Română      Umanist         14       0         0        1       3        5       5           6
+           FÎRLĂDENI
+           CĂUŞENI
+  268                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MEŞTERUL MANOLE"            Română      Umanist         14       0         1        6       4        2       1           0
+           SĂLCUȚA
+           CĂUŞENI
+  269                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN CEL MARE ŞI SFÂNT"        Română      Real            3        0         0        0       1        1       1           4
+           TARACLIA
+           CĂUŞENI
+  270                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN CEL MARE ŞI SFÂNT"        Română      Umanist         13       0         0        2       2        4       5           1
+           TARACLIA
+           CĂUŞENI
+  271                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXEI MATEEVICI"                Română      Umanist         11       0         0        3       0        3       5           1
+           ZAIM
            DONDUŞENI
   272                          Liceul Teoretic "Prometeu"                                      Română      Umanist         5        0         0        1       1        1       2           3
            BARABOI
@@ -911,13 +878,6 @@ Nr. crt.                                           Unitatea de proveniență    
            DUBĂSARI
   293                          Liceul Teoretic "Ion Creangă"                                   Română      Real            14       0         0        1       4        8       1           3
            COŞNIȚA
-
-
-                                                                                                                                                                                                      118
-
-                   Raion                                                                 Limba de                  Nr. de          Din aceştia cu media examenului de BAC:         Cu note
-Nr. crt.                                           Unitatea de proveniență                             Profilul
-                 Localitate                                                              instruire                candidați   10      9-9.99    8-8.99 7-7.99    6-6.99 5-5.99   insuficiente
            DUBĂSARI
   294                          Liceul Teoretic "Ştefan cel Mare şi Sfînt"                Română      Umanist         6        0         1        1       0        2       2           0
            DOROȚCAIA
@@ -949,11 +909,11 @@ Nr. crt.                                           Unitatea de proveniență    
   303                          Instituție Publică Liceul Teoretic "Vasile Suhomlinski"   Rusă        Umanist         8        0         0        0       0        6       2           0
            EDINEȚ
            EDINEȚ
-  304                          Instituție Publică Liceul Teoretic "Vasile Suhomlinski"   Ucraineană Umanist          9        0         0        0       2        4       3           1
+  304                          Instituție Publică Liceul Teoretic "Vasile Suhomlinski"   Ucraineană     Umanist          9        0         0        0       2        4       3           1
            EDINEȚ
-           EDINEȚ              SEMINARUL TEOLOGIC LICEAL DE FETE SFÎNTA
-  305                                                                                    Română      Umanist         4        0         0        0       2        2       0           1
-           EDINEȚ              CUVIOASA MUCENIȚĂ ELISABETA, or. EDINEȚ
+           EDINEȚ
+  305                          SEMINARUL TEOLOGIC LICEAL DE FETE SFÎNTA CUVIOASA MUCENIȚĂ ELISABETA, or. EDINEȚ       Română      Umanist         4        0         0        0       2        2       0           1
+           EDINEȚ
            EDINEȚ
   306                          Instituție Publică Liceul Teoretic Gordineşti             Română      Umanist         12       0         1        1       1        5       4           3
            GORDINEŞTI
@@ -981,39 +941,39 @@ Nr. crt.                                           Unitatea de proveniență    
            FLOREŞTI
   314                          Liceul Teoretic "M. Eminescu"                             Română      Umanist         17       0         0        1       5        7       4           6
            FLOREŞTI
-           FĂLEŞTI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GHEORGHE
-  315                                                                                    Română      Umanist         16       0         0        1       3        6       6           1
-           CĂLINEŞTI           VRABIE"
-           FĂLEŞTI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDRU
-  316                                                                                    Rusă        Umanist         28       0         1        3       6        9       9           1
-           FĂLEŞTI             PUŞKIN"
-           FĂLEŞTI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION
-  317                                                                                    Română      Umanist         0        0         0        0       0        0       0           2
-           FĂLEŞTI             CREANGĂ"
-           FĂLEŞTI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  318                                                                                    Română      Real            22       0         3        7       9        2       1           0
-           FĂLEŞTI             EMINESCU"
-           FĂLEŞTI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  319                                                                                    Română      Umanist         93       0         4       26       38      21       4           2
-           FĂLEŞTI             EMINESCU"
+           FĂLEŞTI
+  315                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GHEORGHE VRABIE"      Română      Umanist         16       0         0        1       3        6       6           1
+           CĂLINEŞTI
+           FĂLEŞTI
+  316                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDRU PUŞKIN"     Rusă        Umanist         28       0         1        3       6        9       9           1
+           FĂLEŞTI
+           FĂLEŞTI
+  317                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION CREANGĂ"          Română      Umanist         0        0         0        0       0        0       0           2
+           FĂLEŞTI
+           FĂLEŞTI
+  318                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"       Română      Real            22       0         3        7       9        2       1           0
+           FĂLEŞTI
+           FĂLEŞTI
+  319                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"       Română      Umanist         93       0         4       26       38      21       4           2
+           FĂLEŞTI
            GLODENI
   320                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC BALATINA               Română      Real            9        0         0        3       2        4       0           4
            BALATINA
            GLODENI
   321                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC BALATINA               Română      Umanist         20       0         2        0       6        6       6           5
            BALATINA
-           GLODENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LEV
-  322                                                                                    Rusă        Real            9        0         0        1       3        3       2           3
-           GLODENI             TOLSTOI"
-           GLODENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LEV
-  323                                                                                    Rusă        Umanist         21       0         0        1       3        9       8           6
-           GLODENI             TOLSTOI"
-           GLODENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "VASILE
-  324                                                                                    Română      Real            6        0         1        1       4        0       0           3
-           GLODENI             COROBAN"
-           GLODENI             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "VASILE
-  325                                                                                    Română      Umanist         23       0         0        9       5        7       2           6
-           GLODENI             COROBAN"
+           GLODENI
+  322                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LEV TOLSTOI"          Rusă        Real            9        0         0        1       3        3       2           3
+           GLODENI
+           GLODENI
+  323                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LEV TOLSTOI"          Rusă        Umanist         21       0         0        1       3        9       8           6
+           GLODENI
+           GLODENI
+  324                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "VASILE COROBAN"       Română      Real            6        0         1        1       4        0       0           3
+           GLODENI
+           GLODENI
+  325                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "VASILE COROBAN"       Română      Umanist         23       0         0        9       5        7       2           6
+           GLODENI
            HÎNCEŞTI
   326                          Liceul Teoretic "Ştefan Holban"                           Română      Real            20       0         1        3       10       4       2           2
            CĂRPINENI
@@ -1077,13 +1037,6 @@ Nr. crt.                                           Unitatea de proveniență    
            LEOVA
   346                          Liceul Teoretic "Constantin Spătaru"                      Română      Real            1        0         0        0       1        0       0           0
            LEOVA
-
-
-                                                                                                                                                                                                119
-
-                   Raion                                                                Limba de                  Nr. de          Din aceştia cu media examenului de BAC:         Cu note
-Nr. crt.                                          Unitatea de proveniență                             Profilul
-                 Localitate                                                             instruire                candidați   10      9-9.99    8-8.99 7-7.99    6-6.99 5-5.99   insuficiente
            LEOVA
   347                         Liceul Teoretic "Constantin Spătaru"                      Română      Umanist         39       0         1        1       12      12       13          5
            LEOVA
@@ -1108,51 +1061,51 @@ Nr. crt.                                          Unitatea de proveniență     
            NISPORENI
   354                         Instituția Publică Liceul Teoretic "Mircea Eliade"        Română      Umanist         25       0         0        0       1       10       14          8
            NISPORENI
-           OCNIȚA             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "CONSTANTIN
-  355                                                                        Română                 Umanist         12       0         1        0       6        2       3           5
-           OCNIȚA             STAMATI"
-           OCNIȚA             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GHEORGHE
-  356                                                                        Rusă                   Real            5        0         0        0       1        2       2           8
-           OCNIȚA             BIRUITORUL"
-           OCNIȚA             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GHEORGHE
-  357                                                                        Rusă                   Umanist         10       0         0        0       2        6       2           7
-           OCNIȚA             BIRUITORUL"
-           OCNIȚA             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL
-  358                                                                        Română                 Real            4        0         0        0       1        3       0           0
-           OCNIȚA             SADOVEANU"
-           OCNIȚA             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL
-  359                                                                        Română                 Umanist         25       0         2        7       9        6       1           1
-           OCNIȚA             SADOVEANU"
-           OCNIȚA             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  360                                                                        Română                 Umanist         6        0         0        0       3        2       1           4
-           OTACI              EMINESCU"
-           OCNIȚA             INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  361                                                                                   Rusă        Umanist         8        0         0        0       2        5       1           2
-           OTACI              EMINESCU"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU
-  362                                                                                   Română      Real            13       0         2        5       3        3       0           1
-           ORHEI              RUSSO"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU
-  363                                                                                   Română      Umanist         24       0         0        5       6        5       8           4
-           ORHEI              RUSSO"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION LUCA
-  364                                                                                   Română      Real            28       0         3        7       9        8       1           2
-           ORHEI              CARAGIALE"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION LUCA
-  365                                                                                   Română      Umanist         63       0         1       15       21      19       7           9
-           ORHEI              CARAGIALE"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL
-  366                                                                                   Rusă        Umanist         10       0         0        3       0        7       0           0
-           ORHEI              LOMONOSOV"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ONISIFOR
-  367                                                                                   Română      Real            12       0         3        4       3        1       1           3
-           ORHEI              GHIBU"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ONISIFOR
-  368                                                                                   Română      Umanist         36       0         3        5       10      11       7           3
-           ORHEI              GHIBU"
-           ORHEI              INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDRU
-  369                                                                                   Română      Umanist         15       0         0        4       4        5       2           1
-           PERESECINA         DONICI"
+           OCNIȚA
+  355                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "CONSTANTIN STAMATI"      Română                 Umanist         12       0         1        0       6        2       3           5
+           OCNIȚA
+           OCNIȚA
+  356                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GHEORGHE BIRUITORUL"       Rusă                   Real            5        0         0        0       1        2       2           8
+           OCNIȚA
+           OCNIȚA
+  357                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "GHEORGHE BIRUITORUL"       Rusă                   Umanist         10       0         0        0       2        6       2           7
+           OCNIȚA
+           OCNIȚA
+  358                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL SADOVEANU"           Română                 Real            4        0         0        0       1        3       0           0
+           OCNIȚA
+           OCNIȚA
+  359                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL SADOVEANU"           Română                 Umanist         25       0         2        7       9        6       1           1
+           OCNIȚA
+           OCNIȚA
+  360                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"       Română                 Umanist         6        0         0        0       3        2       1           4
+           OTACI
+           OCNIȚA
+  361                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"                  Rusă        Umanist         8        0         0        0       2        5       1           2
+           OTACI
+           ORHEI
+  362                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU RUSSO"           Română      Real            13       0         2        5       3        3       0           1
+           ORHEI
+           ORHEI
+  363                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU RUSSO"           Română      Umanist         24       0         0        5       6        5       8           4
+           ORHEI
+           ORHEI
+  364                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION LUCA CARAGIALE"       Română      Real            28       0         3        7       9        8       1           2
+           ORHEI
+           ORHEI
+  365                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION LUCA CARAGIALE"       Română      Umanist         63       0         1       15       21      19       7           9
+           ORHEI
+           ORHEI
+  366                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAIL LOMONOSOV"          Rusă        Umanist         10       0         0        3       0        7       0           0
+           ORHEI
+           ORHEI
+  367                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ONISIFOR GHIBU"        Română      Real            12       0         3        4       3        1       1           3
+           ORHEI
+           ORHEI
+  368                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ONISIFOR GHIBU"        Română      Umanist         36       0         3        5       10      11       7           3
+           ORHEI
+           ORHEI
+  369                         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDRU DONICI"       Română      Umanist         15       0         0        4       4        5       2           1
+           PERESECINA
            REZINA
   370                         Instituție Publică Liceul Teoretic "Ion Creangă"          Română      Umanist         11       0         0        1       5        4       1           2
            CUIZĂUCA
@@ -1205,7 +1158,7 @@ Nr. crt.                                          Unitatea de proveniență     
   386                         LICEUL TEORETIC "CONSTANTIN POPOVICI"                     Rusă        Umanist         0        0         0        0       0        0       0           4
            NIHORENI
            RÎŞCANI
-  387                         LICEUL TEORETIC "CONSTANTIN POPOVICI"                     Ucraineană Umanist          5        0         0        0       2        2       1           0
+  387                         LICEUL TEORETIC "CONSTANTIN POPOVICI"                     Ucraineană       Umanist          5        0         0        0       2        2       1           0
            NIHORENI
            RÎŞCANI
   388                         LICEUL TEORETIC RECEA                                     Română      Real            0        0         0        0       0        0       0           4
@@ -1243,13 +1196,6 @@ Nr. crt.                                          Unitatea de proveniență     
            SOROCA
   399                         Instituția Publică Liceul Teoretic "Ion Creangă"          Română      Real            20       0         2        4       7        5       2           4
            SOROCA
-
-
-                                                                                                                                                                                               120
-
-                   Raion                                                               Limba de                  Nr. de          Din aceştia cu media examenului de BAC:         Cu note
-Nr. crt.                                           Unitatea de proveniență                           Profilul
-                  Localitate                                                           instruire                candidați   10      9-9.99    8-8.99 7-7.99    6-6.99 5-5.99   insuficiente
            SOROCA
   400                          Instituția Publică Liceul Teoretic "Petru Rareş"        Română      Real            9        0         1        3       3        1       1           2
            SOROCA
@@ -1259,66 +1205,66 @@ Nr. crt.                                           Unitatea de proveniență    
            SOROCA
   402                          Instituția Publică Liceul Teoretic Visoca               Română      Umanist         16       0         0        1       1        8       6           5
            VISOCA
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU
-  403                                                                         Română               Real            12       0         1        6       4        1       0           2
-           COJUŞNA             RUSSO"
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU
-  404                                                                         Română               Umanist         22       0         0        2       5        9       6           4
-           COJUŞNA             RUSSO"
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MITROPOLIT
-  405                                                                         Română               Umanist         17       0         0        1       4        6       6           3
-           LOZOVA              NESTOR VORNICESCU"
+           STRĂŞENI
+  403                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU RUSSO"        Română               Real            12       0         1        6       4        1       0           2
+           COJUŞNA
+           STRĂŞENI
+  404                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALECU RUSSO"        Română               Umanist         22       0         0        2       5        9       6           4
+           COJUŞNA
+           STRĂŞENI
+  405                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MITROPOLIT NESTOR VORNICESCU"       Română               Umanist         17       0         0        1       4        6       6           3
+           LOZOVA
            STRĂŞENI
   406                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC ROMĂNEŞTI            Română      Umanist         8        0         2        1       1        4       0           2
            ROMĂNEŞTI
            STRĂŞENI
-  407                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "UNIVERSUL" Română               Umanist         11       0         0        2       5        3       1           0
+  407                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "UNIVERSUL"          Română               Umanist         11       0         0        2       5        3       1           0
            SCORENI
            STRĂŞENI
   408                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC SIREȚI               Română      Umanist         12       0         0        3       4        4       1           0
            SIREȚI
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION
-  409                                                                                  Română      Real            21       0         3        4       8        5       1           4
-           STRĂŞENI            VATAMANU"
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION
-  410                                                                                  Română      Umanist         23       0         2        5       8        4       4           1
-           STRĂŞENI            VATAMANU"
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  411                                                                                  Română      Real            14       0         0        1       8        5       0           0
-           STRĂŞENI            EMINESCU"
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  412                                                                                  Română      Umanist         42       0         0        6       9       20       7           5
-           STRĂŞENI            EMINESCU"
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION
-  413                                                                                  Română      Real            9        0         0        1       5        2       1           2
-           VORNICENI           INCULEȚ"
-           STRĂŞENI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION
-  414                                                                                  Română      Umanist         14       0         0        1       7        2       4           1
-           VORNICENI           INCULEȚ"
+           STRĂŞENI
+  409                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION VATAMANU"       Română      Real            21       0         3        4       8        5       1           4
+           STRĂŞENI
+           STRĂŞENI
+  410                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION VATAMANU"       Română      Umanist         23       0         2        5       8        4       4           1
+           STRĂŞENI
+           STRĂŞENI
+  411                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"      Română      Real            14       0         0        1       8        5       0           0
+           STRĂŞENI
+           STRĂŞENI
+  412                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"      Română      Umanist         42       0         0        6       9       20       7           5
+           STRĂŞENI
+           STRĂŞENI
+  413                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION INCULEȚ"        Română      Real            9        0         0        1       5        2       1           2
+           VORNICENI
+           STRĂŞENI
+  414                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION INCULEȚ"        Română      Umanist         14       0         0        1       7        2       4           1
+           VORNICENI
            STRĂŞENI
   415                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC ZUBREŞTI             Română      Umanist         18       0         2        4       4        6       2           0
            ZUBREŞTI
-           SÎNGEREI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "NICOLAE
-  416                                                                                  Română      Umanist         16       0         2        4       5        3       2           6
-           CHIŞCĂRENI          CASSO"
-           SÎNGEREI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "PAN
-  417                                                                                  Română      Umanist         10       0         0        3       2        3       2           2
-           CUBOLTA             HALIPPA"
-           SÎNGEREI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDRU
-  418                                                                                  Română      Umanist         25       1         2        3       14       3       2           2
-           PEPENI              AGAPIE"
-           SÎNGEREI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION
-  419                                                                                  Română      Real            7        0         0        0       3        2       2           7
-           RĂDOAIA             CREANGĂ"
-           SÎNGEREI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION
-  420                                                                                  Română      Umanist         9        0         0        1       0        2       6           6
-           RĂDOAIA             CREANGĂ"
-           SÎNGEREI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  421                                                                                  Română      Real            0        0         0        0       0        0       0           1
-           SÎNGEREI            EMINESCU"
-           SÎNGEREI            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI
-  422                                                                                  Română      Umanist         52       0         2       12       11      21       6           3
-           SÎNGEREI            EMINESCU"
+           SÎNGEREI
+  416                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "NICOLAE CASSO"      Română      Umanist         16       0         2        4       5        3       2           6
+           CHIŞCĂRENI
+           SÎNGEREI
+  417                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "PAN HALIPPA"        Română      Umanist         10       0         0        3       2        3       2           2
+           CUBOLTA
+           SÎNGEREI
+  418                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ALEXANDRU AGAPIE"        Română      Umanist         25       1         2        3       14       3       2           2
+           PEPENI
+           SÎNGEREI
+  419                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION CREANGĂ"           Română      Real            7        0         0        0       3        2       2           7
+           RĂDOAIA
+           SÎNGEREI
+  420                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ION CREANGĂ"           Română      Umanist         9        0         0        1       0        2       6           6
+           RĂDOAIA
+           SÎNGEREI
+  421                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"          Română      Real            0        0         0        0       0        0       0           1
+           SÎNGEREI
+           SÎNGEREI
+  422                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "MIHAI EMINESCU"          Română      Umanist         52       0         2       12       11      21       6           3
+           SÎNGEREI
            SÎNGEREI
   423                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "OLIMP"              Română      Real            16       0         1        4       5        5       1           2
            SÎNGEREI
@@ -1340,45 +1286,45 @@ Nr. crt.                                           Unitatea de proveniență    
            ŞOLDĂNEŞTI
   429                          Instituția Publică Liceul Teoretic "Ştefan cel Mare"    Română      Umanist         19       0         1        1       1        9       7           5
            ŞOLDĂNEŞTI
-           ŞTEFAN VODĂ         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "BOGDAN
-  430                                                                                  Română      Real            1        0         0        0       0        0       1           1
-           OLĂNEŞTI            PETRICEICU HAŞDEU"
-           ŞTEFAN VODĂ         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN
-  431                                                                                  Română      Real            15       0         3        3       8        1       0           0
-           ŞTEFAN VODĂ         VODĂ"
-           ŞTEFAN VODĂ         INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN
-  432                                                                                  Română      Umanist         55       0         6        6       16      20       7           4
-           ŞTEFAN VODĂ         VODĂ"
+           ŞTEFAN VODĂ
+  430                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "BOGDAN PETRICEICU HAŞDEU"          Română      Real            1        0         0        0       0        0       1           1
+           OLĂNEŞTI
+           ŞTEFAN VODĂ
+  431                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN VODĂ"        Română      Real            15       0         3        3       8        1       0           0
+           ŞTEFAN VODĂ
+           ŞTEFAN VODĂ
+  432                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "ŞTEFAN VODĂ"        Română      Umanist         55       0         6        6       16      20       7           4
+           ŞTEFAN VODĂ
            TARACLIA
   433                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC CIUMAI               Rusă        Umanist         12       0         0        0       3        8       1           6
            CIUMAI
-           TARACLIA            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "SFÎNTUL
-  434                                                                                  Rusă        Umanist         0        0         0        0       0        0       0           2
-           CORTEN              PAISII HILENDARSCHI"
-           TARACLIA            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "IVAN
-  435                                                                                  Rusă        Real            15       0         0        3       6        4       2           1
-           TARACLIA            VAZOV"
-           TARACLIA            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "IVAN
-  436                                                                                  Rusă        Umanist         43       0         0        1       19      16       7           4
-           TARACLIA            VAZOV"
+           TARACLIA
+  434                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "SFÎNTUL PAISII HILENDARSCHI"               Rusă        Umanist         0        0         0        0       0        0       0           2
+           CORTEN
+           TARACLIA
+  435                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "IVAN VAZOV"       Rusă        Real            15       0         0        3       6        4       2           1
+           TARACLIA
+           TARACLIA
+  436                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "IVAN VAZOV"       Rusă        Umanist         43       0         0        1       19      16       7           4
+           TARACLIA
            TARACLIA
   437                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC TVARDIȚA             Rusă        Umanist         21       0         0        3       7        8       3           1
            TVARDIȚA
-           TARACLIA            INSTITUȚIA PUBLICĂ LICEUL TEORETIC "HRISTO
-  438                                                                                  Rusă        Umanist         17       0         1        2       9        5       0           0
-           VALEA PERJEI        BOTEV"
-           TELENEŞTI           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "A.
-  439                                                                                  Română      Real            7        0         0        0       5        1       1           1
-           CĂZĂNEŞTI           PĂUNESCU"
-           TELENEŞTI           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "A.
-  440                                                                                  Română      Umanist         16       0         0        0       2        9       5           1
-           CĂZĂNEŞTI           PĂUNESCU"
-           TELENEŞTI           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LUCIAN
-  441                                                                                  Română      Real            18       0         0        4       7        6       1           4
-           TELENEŞTI           BLAGA"
-           TELENEŞTI           INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LUCIAN
-  442                                                                                  Română      Umanist         34       0         0        7       13       7       7           7
-           TELENEŞTI           BLAGA"
+           TARACLIA
+  438                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "HRISTO BOTEV"        Rusă        Umanist         17       0         1        2       9        5       0           0
+           VALEA PERJEI
+           TELENEŞTI
+  439                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "A. PĂUNESCU"        Română      Real            7        0         0        0       5        1       1           1
+           CĂZĂNEŞTI
+           TELENEŞTI
+  440                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "A. PĂUNESCU"        Română      Umanist         16       0         0        0       2        9       5           1
+           CĂZĂNEŞTI
+           TELENEŞTI
+  441                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LUCIAN BLAGA"       Română      Real            18       0         0        4       7        6       1           4
+           TELENEŞTI
+           TELENEŞTI
+  442                          INSTITUȚIA PUBLICĂ LICEUL TEORETIC "LUCIAN BLAGA"       Română      Umanist         34       0         0        7       13       7       7           7
+           TELENEŞTI
            TIRASPOL
   443                          Liceul Teoretic "Lucian Blaga"                          Română      Real            6        0         1        1       1        3       0           2
            TIRASPOL
@@ -1409,13 +1355,6 @@ Nr. crt.                                           Unitatea de proveniență    
            UNGHENI
   452                          LICEUL TEORETIC "ION CREANGĂ"                           Română      Real            11       0         2        0       4        4       1          10
            UNGHENI
-
-
-                                                                                                                                                                                              121
-
-                   Raion                                                                    Limba de                    Nr. de              Din aceştia cu media examenului de BAC:            Cu note
-Nr. crt.                                           Unitatea de proveniență                                 Profilul
-                 Localitate                                                                 instruire                  candidați   10          9-9.99    8-8.99 7-7.99    6-6.99 5-5.99      insuficiente
            UNGHENI
   453                          LICEUL TEORETIC "ION CREANGĂ"                                Română       Umanist          27       0             0        0       6        3        18            3
            UNGHENI
@@ -1431,91 +1370,91 @@ Nr. crt.                                           Unitatea de proveniență    
            UNGHENI
   457                          LICEUL TEORETIC "VASILE ALECSANDRI"                          Română       Umanist          27       0             3        8       11       4        1             0
            UNGHENI
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   458                          LICEUL TEORETIC "D.CELENGHIR", AVDARMA                       Rusă         Umanist          18       0             0        3       4        9        2             1
            AVDARMA
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   459                          LICEUL TEORETIC s. CAZACLIA                                  Rusă         Umanist          11       0             0        1       4        5        1             1
            CAZACLIA
-           CEADÎR-LUNGA        FILIALA CEADÎR-LUNGA A INSTITUȚIEI PRIVATE DE
-  460                                                                                       Rusă         Real             16       0             0        3       7        4        2             1
-           CEADÎR-LUNGA        ÎNVĂȚĂMÎNT LICEUL TEORETIC "ORIZONT"
-           CEADÎR-LUNGA        FILIALA CEADÎR-LUNGA A INSTITUȚIEI PRIVATE DE
-  461                                                                                       Rusă         Umanist          21       0             0        2       3        15       1             1
-           CEADÎR-LUNGA        ÎNVĂȚĂMÎNT LICEUL TEORETIC "ORIZONT"
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
+  460                          FILIALA CEADÎR-LUNGA A INSTITUȚIEI PRIVATE DE ÎNVĂȚĂMÎNT LICEUL TEORETIC "ORIZONT"       Rusă         Real             16       0             0        3       7        4        2             1
+           CEADÎR-LUNGA
+           GĂGĂUZIA
+  461                          FILIALA CEADÎR-LUNGA A INSTITUȚIEI PRIVATE DE ÎNVĂȚĂMÎNT LICEUL TEORETIC "ORIZONT"       Rusă         Umanist          21       0             0        2       3        15       1             1
+           CEADÎR-LUNGA
+           GĂGĂUZIA
   462                          LICEUL TEORETIC "V.MOŞCOV"mun. CEADÎR-LUNGA                  Rusă         Real             21       0             0        1       11       5        4             0
            CEADÎR-LUNGA
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   463                          LICEUL TEORETIC "V.MOŞCOV"mun. CEADÎR-LUNGA                  Rusă         Umanist          19       0             0        0       9        8        2             3
            CEADÎR-LUNGA
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   464                          LICEUL TEORETIC Nr. 2 mun. CEADÎR-LUNGA                      Rusă         Real             15       0             0        1       3        5        6             7
            CEADÎR-LUNGA
-           UTA GĂGĂUZIA        LICEUL TEORETIC RAIONAL "M.GUBOGLO" MUN.
-  465                                                                                       Rusă         Real             12       0             0        4       6        2        0             0
-           CEADÎR-LUNGA        CEADÎR-LUNGA
-           UTA GĂGĂUZIA        LICEUL TEORETIC RAIONAL "M.GUBOGLO" MUN.
-  466                                                                                       Rusă         Umanist          25       0             0        0       6        13       6             5
-           CEADÎR-LUNGA        CEADÎR-LUNGA
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
+  465                          LICEUL TEORETIC RAIONAL "M.GUBOGLO" MUN. CEADÎR-LUNGA        Rusă         Real             12       0             0        4       6        2        0             0
+           CEADÎR-LUNGA
+           GĂGĂUZIA
+  466                          LICEUL TEORETIC RAIONAL "M.GUBOGLO" MUN. CEADÎR-LUNGA        Rusă         Umanist          25       0             0        0       6        13       6             5
+           CEADÎR-LUNGA
+           GĂGĂUZIA
   467                          LICEUL TEORETIC "GR.VIERU" s. CHIOSELIA RUSĂ                 Română       Umanist          14       0             0        4       3        4        3             1
            CHIOSELIA RUSĂ
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   468                          Liceul Teoretic "M.I. TUZLOV" s. CHIRSOVA                    Rusă         Umanist          16       0             0        2       9        4        1             4
            CHIRSOVA
-           UTA GĂGĂUZIA
-  469                          LICEUL INTERNAT SPORTIV REGIONAL mun. COMRAT Rusă                         Sport            5        0             0        0       0        3        2             3
+           GĂGĂUZIA
+  469                          LICEUL INTERNAT SPORTIV REGIONAL mun. COMRAT                 Rusă         Sport            5        0             0        0       0        3        2             3
            COMRAT
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   470                          LICEUL TEORETIC "D.A. MAVRODI"                               Rusă         Umanist          0        0             0        0       0        0        0             1
            COMRAT
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   471                          LICEUL TEORETIC "D.CARACIOBAN" mun. COMRAT                   Rusă         Real             22       0             0        3       7        12       0             2
            COMRAT
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   472                          LICEUL TEORETIC "D.CARACIOBAN" mun. COMRAT                   Rusă         Umanist          26       0             0        1       5        8        12            3
            COMRAT
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   473                          LICEUL TEORETIC "M.EMINESCU" mun. COMRAT                     Română       Umanist          14       0             0        0       4        8        2             0
            COMRAT
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   474                          LICEUL TEORETIC "N.TRETIACOV" mun. COMRAT                    Rusă         Umanist          17       0             0        0       3        11       3             8
            COMRAT
-           UTA GĂGĂUZIA        LICEUL TEORETIC RAIONAL "G.A.GAIDARJI" mun.
-  475                                                                                       Rusă         Real             29       0             0       11       9        8        1             0
-           COMRAT              COMRAT
-           UTA GĂGĂUZIA        LICEUL TEORETIC RAIONAL "G.A.GAIDARJI" mun.
-  476                                                                                       Rusă         Umanist          23       0             0        0       6        15       2             1
-           COMRAT              COMRAT
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
+  475                          LICEUL TEORETIC RAIONAL "G.A.GAIDARJI" mun. COMRAT          Rusă         Real             29       0             0       11       9        8        1             0
+           COMRAT
+           GĂGĂUZIA
+  476                          LICEUL TEORETIC RAIONAL "G.A.GAIDARJI" mun. COMRAT          Rusă         Umanist          23       0             0        0       6        15       2             1
+           COMRAT
+           GĂGĂUZIA
   477                          LICEUL TEORETIC "TODUR ZANET" s.CONGAZ                       Rusă         Real             11       0             0        1       4        5        1             4
            CONGAZ
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   478                          LICEUL TEORETIC "TODUR ZANET" s.CONGAZ                       Rusă         Umanist          0        0             0        0       0        0        0             1
            CONGAZ
-           UTA GĂGĂUZIA        LICEUL TEORETIC MOLDO-TURC "S.DEMIREL" s.
-  479                                                                                       Engleză      Real             16       0             0        1       11       4        0             0
-           CONGAZ              CONGAZ
-           UTA GĂGĂUZIA        LICEUL TEORETIC MOLDO-TURC "S.DEMIREL" s.
-  480                                                                                       Engleză      Umanist          12       0             0        0       9        2        1             0
-           CONGAZ              CONGAZ
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
+  479                          LICEUL TEORETIC MOLDO-TURC "S.DEMIREL" s. CONGAZ             Engleză      Real             16       0             0        1       11       4        0             0
+           CONGAZ
+           GĂGĂUZIA
+  480                          LICEUL TEORETIC MOLDO-TURC "S.DEMIREL" s. CONGAZ             Engleză      Umanist          12       0             0        0       9        2        1             0
+           CONGAZ
+           GĂGĂUZIA
   481                          LICEUL TEORETIC "BORIS IANACOGLO" s. COPCEAC                 Rusă         Real             6        0             0        0       2        2        2             3
            COPCEAC
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   482                          LICEUL TEORETIC "S.I.BARANOVSKI" s. COPCEAC                  Rusă         Real             18       0             1        5       10       2        0             2
            COPCEAC
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   483                          LICEUL TEORETIC "S.I.BARANOVSKI" s. COPCEAC                  Rusă         Umanist          15       0             0        0       6        7        2             0
            COPCEAC
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   484                          LICEUL TEORETIC "A. DOLJNENKO" or. VULCĂNEŞTI                Rusă         Real             19       0             0        0       10       7        2             0
            VULCĂNEŞTI
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   485                          LICEUL TEORETIC "A. DOLJNENKO" or. VULCĂNEŞTI                Rusă         Umanist          14       0             0        1       1        9        3             1
            VULCĂNEŞTI
-           UTA GĂGĂUZIA
+           GĂGĂUZIA
   486                          LICEUL TEORETIC "LUCEAFĂRUL" OR. VULCĂNEŞTI                  Română       Umanist          10       0             0        0       2        2        6             2
            VULCĂNEŞTI
 `;

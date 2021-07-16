@@ -1,14 +1,23 @@
-const pdfUtil = require('pdf-to-text');
-const pdfPath = "./pdf/raport_examene_2019.pdf";
+const fs = require('fs');
+const path = require('path');
 
-//option to extract text from page 0 to 10
-const options = {
-  from: 113,
-  to: 122
-};
+const prepareData = require('./src/prepareData');
+const readFiles = require('./src/readFiles');
+const appendFiles = require('./src/appendFiles');
 
-//Omit option to extract all text from the pdf file
-pdfUtil.pdfToText(pdfPath, options, function(err, data) {
-  if (err) throw(err);
-  console.log(data); //print all text
+const data = require('./bac/2019.js')
+  .trim()
+  .split('\n');
+
+const dirPath = path.join(__dirname, 'moldova-schools');
+
+const preparedData = prepareData(data);
+const files = readFiles(dirPath);
+const notSavedItems = appendFiles(preparedData, files);
+
+console.log(notSavedItems);
+
+files.forEach((file) => {
+  const filePath = path.join(dirPath, `${file.id}.json`);
+  fs.writeFileSync(filePath, JSON.stringify(file, null, 2));
 });
