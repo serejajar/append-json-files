@@ -37,6 +37,20 @@
       "candidats": 18,
       "rejectedCandidats": 1,
       "mediumNote": 6.28
+    },
+    {
+      "year": "2019",
+      "text": "277   CHISINAU       BOTANICA   Liceul Teoretic \"Mircea cel Bătrân\"                          29    22    7   75.86   5.95",
+      "candidats": 29,
+      "rejectedCandidats": 7,
+      "mediumNote": 5.95
     }
+  ],
+  "langs": [
+    "romana"
+  ],
+  "profiles": [
+    "real",
+    "umanist"
   ]
 }

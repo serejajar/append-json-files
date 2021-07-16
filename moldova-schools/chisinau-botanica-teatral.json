@@ -52,5 +52,11 @@
       "rejectedCandidats": 4,
       "mediumNote": 7.12
     }
+  ],
+  "langs": [
+    "rusa"
+  ],
+  "profiles": [
+    "arta"
   ]
 }

@@ -52,5 +52,13 @@
       "rejectedCandidats": 0,
       "mediumNote": 6.51
     }
+  ],
+  "langs": [
+    "rusa",
+    "ucraineana"
+  ],
+  "profiles": [
+    "real",
+    "umanist"
   ]
 }

@@ -52,5 +52,11 @@
       "rejectedCandidats": 2,
       "mediumNote": 6.51
     }
+  ],
+  "langs": [
+    "romana"
+  ],
+  "profiles": [
+    "sport"
   ]
 }

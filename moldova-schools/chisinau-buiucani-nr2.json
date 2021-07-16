@@ -1,6 +1,6 @@
 {
   "id": "chisinau-buiucani-nr2",
-  "search": "nr. ?2",
+  "search": "profesionala nr. ?2",
   "address": {
     "district": "chisinau",
     "city": "buiucani"
@@ -24,5 +24,11 @@
       "rejectedCandidats": 10,
       "mediumNote": 6
     }
+  ],
+  "langs": [
+    "romana"
+  ],
+  "profiles": [
+    "tehnologic"
   ]
 }

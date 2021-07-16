@@ -31,5 +31,12 @@
       "rejectedCandidats": 7,
       "mediumNote": 6.19
     }
+  ],
+  "langs": [
+    "romana"
+  ],
+  "profiles": [
+    "real",
+    "umanist"
   ]
 }
